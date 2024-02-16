@@ -1,0 +1,382 @@
+/* @import url("https://fonts.google.com/specimen/Inter"); */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  padding: 4% 0;
+  font-family: "Inter", sans-serif;
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.headline{
+  font-size: 50px;
+  text-align: center;
+}
+
+/* ----------categori buttons ---------- */
+
+
+.btn-container{
+  width: 850px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(242,242,242);
+  margin-top: 30px;
+}
+.categori-btn{
+  width: 32%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.categori-btn i{
+  color:rgb(242,242,242) ;
+  padding: 0 5px;
+}
+.categori-btn:focus{
+  background-color: #000;
+  color: #fff;
+}
+
+/* ------------- product container ------------- */
+
+
+.product-container{
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  height: 450px;
+  width: 280px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+.img-container{
+  width: 100%;
+  height: 72%;
+  position: relative;
+}
+.card-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.badge-text{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100px;
+  height: 35px;
+  font-size: 12px;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.card-info{
+  margin-top: 10px;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.card-info h4{
+  width: 55%;
+  font-size: 22px;
+  overflow: hidden;
+  text-wrap: nowrap;
+  font-weight: 550;
+  text-overflow: ellipsis;
+}
+.vendor-dot{
+  height: 4px;
+  width: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 7px 2px 5px;
+}
+.card-info h5{
+  color: #343333;
+  font-weight: 500;
+  font-size: 16px;
+
+}
+.card-prices{
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-prices  h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+}
+.card-prices  h5{
+  font-size: 18px;
+  font-weight: 600;
+  color: #7a7a7a;
+  text-decoration: line-through;
+}
+.card-prices h6{
+  color: rgb(255,55,55);
+  font-size: 18px;
+}
+.addToCard-btn{
+  height: 10%;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/* ------------ media query --------------- */
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .card{
+    height: 400px;
+    width: 230px;
+  }
+  .card-info h4{
+    font-size: 18px;
+  }
+  .card-info h5{
+    font-size: 14px;
+  }
+  .card-prices  h4{
+    font-size: 15px;
+  }
+  .card-prices  h5{
+    font-size: 15px;
+  }
+  .card-prices h6{
+    font-size: 15px;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headline{
+    font-size: 35px;
+  }
+  .btn-container{
+    width: 600px;
+    height: 50px;
+  }
+  .product-container{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card{
+    height: 330px;
+    width: 170px;
+  }
+  .card-info h4{
+    font-size: 15px;
+  }
+  .card-info h5{
+    font-size: 13px;
+  }
+  .card-prices  h4{
+    font-size: 11px;
+  }
+  .card-prices  h5{
+    font-size: 11px;
+  }
+  .card-prices h6{
+    font-size: 11px;
+  }
+  .addToCard-btn{
+    font-size: 12px;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .headline{
+    font-size: 22px;
+  }
+  .btn-container{
+    width: 410px;
+    height: 35px;
+  }
+  .product-container{
+    width: 450px;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card{
+    height: 320px;
+    width: 180px;
+    margin: 10px 10px;
+  }
+  .card-info h4{
+    font-size: 15px;
+  }
+  .card-info h5{
+    font-size: 13px;
+  }
+  .card-prices  h4{
+    font-size: 11px;
+  }
+  .card-prices  h5{
+    font-size: 11px;
+  }
+  .card-prices h6{
+    font-size: 11px;
+  }
+  .addToCard-btn{
+    font-size: 12px;
+  }
+  .badge-text{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+  .badge-text{
+   
+    width: 80px;
+    height: 35px;
+    font-size: 9px;
+    background-color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 5px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .headline{
+    font-size: 22px;
+  }
+  .btn-container{
+    width: 90%;
+    height: 35px;
+  }
+  .categori-btn{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .product-container{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card{
+    height: 350px;
+    width: 200px;
+    margin: 10px 10px;
+  }
+  .card-info h4{
+    font-size: 15px;
+  }
+  .card-info h5{
+    font-size: 13px;
+  }
+  .card-prices  h4{
+    font-size: 11px;
+  }
+  .card-prices  h5{
+    font-size: 11px;
+  }
+  .card-prices h6{
+    font-size: 11px;
+  }
+  .addToCard-btn{
+    font-size: 12px;
+  }
+  .badge-text{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+  .badge-text{
+   
+    width: 80px;
+    height: 35px;
+    font-size: 9px;
+    background-color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 5px;
+  }
+  
+}
